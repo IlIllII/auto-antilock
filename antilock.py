@@ -16,9 +16,10 @@ if __name__ == "__main__":
             print("Usage: antilock.py [antilock frequency in minutes]")
             exit(0)
 
+    if sleep_duration < 0:
+        print("frequency must be a postitive number.")
+        exit(0)
+
     while True:
         pyautogui.press("scrolllock")
-        if sleep_duration < 0:
-            print("frequency must be a postitive number.")
-            exit(0)
         time.sleep(sleep_duration)
