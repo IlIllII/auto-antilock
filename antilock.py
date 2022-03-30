@@ -1,8 +1,23 @@
+import sys
 import time
 import pyautogui
 
+MINUTE = 60
+sleep_duration = 10 * MINUTE
 
-while True:
-    pyautogui.press("scrolllock")
-    time.sleep(30)
-    print("pressed", flush=True)
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+
+    for arg in args:
+        try:
+            sleep_duration = int(arg) * MINUTE
+        except:
+            print("Usage: antilock.py [antilock frequency in minutes]")
+
+    while True:
+        pyautogui.press("scrolllock")
+        if sleep_duration < 0:
+            print("frequency must be a postitive number.")
+            exit(0)
+        time.sleep(sleep_duration)
