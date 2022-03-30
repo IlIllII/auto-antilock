@@ -12,7 +12,7 @@ Navigate your terminal to the directory containing this script and type:
 py antilock.py
 ```
 
-The script will then run indefinitely until you stop it by either interrupting the program or closing your terminal. You can tell that it is running by the blinking cursor on your keyboard or just by the fact that the screen is not locked.
+The script will then run indefinitely until you stop it by either interrupting the program or closing your terminal. You can tell that it is running by the blinking button on your keyboard or just by the fact that the screen is not locked.
 
 By default the button toggles every 10 minutes, but you may need to toggle it faster depending on your screen lock settings. In that case, just pass the number of minutes you want your desired toggle frequency to be as an argument to the script like so:
 
