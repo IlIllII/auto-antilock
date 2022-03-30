@@ -14,6 +14,7 @@ if __name__ == "__main__":
             sleep_duration = int(arg) * MINUTE
         except:
             print("Usage: antilock.py [antilock frequency in minutes]")
+            exit(0)
 
     while True:
         pyautogui.press("scrolllock")
