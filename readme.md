@@ -21,3 +21,9 @@ py antilock.py 5
 ```
 
 The above command will toggle the scroll lock every 5 minutes.
+
+Finally, the script uses pyautogui to toggle the button. If you don't have this module installed, you can install it by typing:
+
+```bash
+pip install pyautogui
+```
